@@ -1,0 +1,54 @@
+import styles from "./dashboard.module.css"
+//import { Link } from 'react-router-dom';
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/chart.js">
+    <title>Tableau de Bord Sportif</title>
+</head>
+<body>
+    <header>
+        <div class="logo">Logo</div>
+        <nav>
+            <ul>
+                <li>Accueil</li>
+                <li>Activités</li>
+                <li>Calories</li>
+                <li>Profil</li>
+            </ul>
+        </nav>
+    </header>
+    
+    <aside>
+        <div class="menu-item"><i class="fas fa-dumbbell"></i> Sport</div>
+        <div class="menu-item"><i class="fas fa-utensils"></i> Nutrition</div>
+        <div class="menu-item"><i class="fas fa-chart-line"></i> Statistiques</div>
+        <div class="menu-item"><i class="fas fa-cog"></i> Paramètres</div>
+    </aside>
+    
+    <main>
+        <div class="content-box">
+            <div class="content-header">
+                <h1>Sport</h1>
+                <p>Nom de l'activité</p>
+            </div>
+            <div class="stats">
+                <div class="icon">Icône 1</div>
+                <div class="icon">Icône 2</div>
+                <div class="icon">Icône 3</div>
+                <div class="icon">Icône 4</div>
+                <div class="graphs">
+                    <div class="chart" id="weightCaloriesChart"></div>
+                    <div class="chart" id="chart1"></div>
+                    <div class="chart" id="chart2"></div>
+                    <div class="chart" id="chart3"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
